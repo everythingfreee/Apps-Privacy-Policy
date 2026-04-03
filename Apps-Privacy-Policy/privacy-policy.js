@@ -119,19 +119,6 @@ async function incrementAgreementCount() {
 }
 
 // -------------------------------------------------------
-async function setPrivacyAccepted() {
-
-  await new Promise((resolve) => {
-    chrome.storage.sync.set({ privacyAccepted: true }, resolve);
-  });
-
-  window.parent.postMessage({ type: "PRIVACY_ACCEPTED" }, "*");
-
-  if (window === window.parent) {
-    window.location.href = "palette.html";
-  }
-
-}
 
 // -------------------------------------------------------
 async function onLearnMoreClick() {
@@ -164,17 +151,6 @@ async function onIUnderstand() {
 }
 
 // -------------------------------------------------------
-function onDeny() {
-
-  alert(
-    "You must accept the privacy policy to use this extension."
-  );
-
-  chrome.storage.sync.set({ privacyAccepted: false });
-
-  window.parent.postMessage({ type: "PRIVACY_DENIED" }, "*");
-
-}
 
 // -------------------------------------------------------
 function bindEvents() {
