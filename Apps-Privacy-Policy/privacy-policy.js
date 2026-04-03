@@ -163,24 +163,7 @@ function bindEvents() {
 }
 
 // -------------------------------------------------------
-async function initPage() {
 
-  const result = await new Promise((resolve) => {
-    chrome.storage.sync.get(["privacyAccepted"], resolve);
-  });
-
-  if (result.privacyAccepted) {
-    window.location.href = "palette.html";
-    return;
-  }
-
-  await fetchFullConfig(true, false);
-
-  bindEvents();
-
-  expandableSection.classList.add("hidden");
-
-}
 
 // -------------------------------------------------------
 initPage().catch(console.warn);
