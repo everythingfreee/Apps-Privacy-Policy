@@ -16,11 +16,7 @@ const FIRESTORE_PATCH =
 const summarySpan = document.getElementById("summaryText");
 const updatedDateSpan = document.getElementById("updatedDateBadge");
 const learnMoreBtn = document.getElementById("learnMoreBtn");
-const iUnderstandBtn = document.getElementById("iUnderstandBtn");
 const expandableSection = document.getElementById("expandableSection");
-const fullPolicyDiv = document.getElementById("fullPolicyContent");
-const acceptBtn = document.getElementById("acceptBtn");
-const denyBtn = document.getElementById("denyBtn");
 
 // -------------------------------------------------------
 let currentFullPolicy = "";
@@ -87,38 +83,6 @@ async function fetchFullConfig(updateUI = true, isLearnMoreFetch = false) {
 }
 
 // -------------------------------------------------------
-// Increment agreement count
-// -------------------------------------------------------
-async function incrementAgreementCount() {
-
-  try {
-
-    const doc = await fetch(FIRESTORE_GET).then(r => r.json());
-    const current =
-      parseInt(doc.fields?.agreementCount?.integerValue || "0");
-
-    const newValue = current + 1;
-
-    await fetch(FIRESTORE_PATCH, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        fields: {
-          agreementCount: { integerValue: newValue }
-        }
-      })
-    });
-
-    showToast("✓ Consent registered");
-
-  } catch (err) {
-    console.error(err);
-    showToast("Could not update agreement count", true);
-  }
-
-}
-
-// -------------------------------------------------------
 
 // -------------------------------------------------------
 async function onLearnMoreClick() {
@@ -135,20 +99,7 @@ async function onLearnMoreClick() {
 }
 
 // -------------------------------------------------------
-async function onAccept() {
 
-  await incrementAgreementCount();
-  await setPrivacyAccepted();
-
-}
-
-// -------------------------------------------------------
-async function onIUnderstand() {
-
-  await incrementAgreementCount();
-  await setPrivacyAccepted();
-
-}
 
 // -------------------------------------------------------
 
@@ -156,14 +107,5 @@ async function onIUnderstand() {
 function bindEvents() {
 
   learnMoreBtn.addEventListener("click", onLearnMoreClick);
-  iUnderstandBtn.addEventListener("click", onIUnderstand);
-  acceptBtn.addEventListener("click", onAccept);
-  denyBtn.addEventListener("click", onDeny);
 
 }
-
-// -------------------------------------------------------
-
-
-// -------------------------------------------------------
-initPage().catch(console.warn);
