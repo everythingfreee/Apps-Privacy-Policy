@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Extension Privacy Policy</title>
+    <!-- Google Fonts & simple modern reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #f6f9fc 0%, #edf2f7 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .policy-card {
+            max-width: 820px;
+            width: 100%;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(0px);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .policy-header {
+            background: #1a2c3e;
+            padding: 1.5rem 2rem;
+            color: white;
+        }
+
+        .policy-header h1 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-header p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 0.4rem;
+        }
+
+        .policy-content {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .summary-text {
+            background: #eef2ff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 1.25rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2d6a4f;
+            font-weight: 500;
+            color: #0b2b26;
+            line-height: 1.5;
+        }
+
+        .updated-badge {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.1s ease, background 0.2s;
+            font-family: inherit;
+        }
+
+        /* .btn-primary {
+            background: #1e6f5c;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .btn-primary:hover {
+            background: #0f5a48;
+            transform: scale(0.98);
+        } */
+
+        .btn-secondary {
+            background: #006da7;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: #1d82ff;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid #cbd5e1;
+            color: #1e293b;
+        }
+
+        .btn-outline:hover {
+            background: #f1f5f9;
+        }
+
+        .btn-accept {
+            background: #2b7a4b;
+            color: white;
+        }
+
+        .btn-deny {
+            background: #ecfff0;
+            color: #1e293b;
+        }
+
+        .full-policy-container {
+            margin-top: 1.8rem;
+            margin-bottom: 1.5rem;
+            background: #f8fafc;
+            border-radius: 1.25rem;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid #e2edf2;
+            transition: all 0.2s;
+        }
+
+        .full-policy-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #1e2a3e;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .accept-deny-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 1rem 0;
+        }
+
+        .toast-msg {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+            font-weight: 500;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 0.6s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        footer {
+            background: #f1f5f9;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #5c6e7e;
+            border-top: 1px solid #e2edf2;
+        }
+    </style>
+</head>
+<body>
+<div class="policy-card" id="appRoot">
+    <div class="policy-header">
+        <h1>🔒 Privacy & Consent</h1>
+        <p>Your data choices matter</p>
+    </div>
+    <div class="policy-content">
+        <div id="updatedDateBadge" class="updated-badge">⏳ loading...</div>
+        <div id="summaryArea" class="summary-text">
+            <span id="summaryText">Loading privacy summary...</span>
+        </div>
+        
+        <div class="button-group" id="initialButtonsContainer">
+            <a id="learnMoreBtn" class="btn btn-primary" href="#">📖 Learn more</a>
+            <button id="iUnderstandBtn" class="btn btn-secondary">✓ I understand</button>
+        </div>
+
+        <!-- Expandable full policy + accept/deny section (hidden initially) -->
+        <div id="expandableSection" class="hidden">
+            <div class="full-policy-container">
+                <div id="fullPolicyContent" class="full-policy-text">Loading full policy...</div>
+            </div>
+            <div class="accept-deny-row" id="acceptDenyButtonsRow">
+                <button id="denyBtn" class="btn btn-deny">❌ Deny</button>
+                <button id="acceptBtn" class="btn btn-accept">✅ Accept</button>
+                
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div style="font-size: 0.75rem; color: #4a627a; text-align: center;">Extension requires consent to function</div>
+    </div>
+    <footer>🔐 Privacy controls • version 2.0</footer>
+</div>
+<div id="toastMessage" class="toast-msg"></div>
+
+<!-- Firebase SDK v9 modular -->
+<script type="importmap">
+    {
+        "imports": {
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"
+        }
+    }
+</script>
+
+<script src="privacy-policy.js" type="module"></script>
+</body>
+</html>
