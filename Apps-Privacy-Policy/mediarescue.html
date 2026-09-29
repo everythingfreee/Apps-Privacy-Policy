@@ -1,194 +1,198 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MediaRescue Privacy Policy</title>
+```
+<title>MediaRescue Privacy Policy</title>
 
-    <meta
-        name="description"
-        content="Privacy Policy for MediaRescue, an offline-first Android media and storage management application."
-    >
+<meta
+    name="description"
+    content="Privacy Policy for MediaRescue, an offline-first Android media and storage management application."
+>
 
-    <style>
-        :root {
-            --bg: #f6f8fb;
-            --card: #ffffff;
-            --text: #172033;
-            --muted: #667085;
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --border: #e5e7eb;
-            --success: #15803d;
-        }
+<style>
+    :root {
+        --bg: #f6f8fb;
+        --card: #ffffff;
+        --text: #172033;
+        --muted: #667085;
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+        --border: #e5e7eb;
+        --success: #15803d;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-        }
+    body {
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+    }
 
-        a {
-            color: var(--primary);
-            text-decoration: none;
-        }
+    a {
+        color: var(--primary);
+        text-decoration: none;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a:hover {
+        text-decoration: underline;
+    }
 
+    .hero {
+        background: linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+        color: white;
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 82px;
+        height: 82px;
+        margin: 0 auto 20px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        backdrop-filter: blur(10px);
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: 0 auto;
+        opacity: 0.9;
+        font-size: 1.05rem;
+    }
+
+    .container {
+        width: min(900px, calc(100% - 32px));
+        margin: 40px auto;
+    }
+
+    .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 32px;
+        margin-bottom: 22px;
+        box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .updated {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 7px 13px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.15);
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+        margin-bottom: 14px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        margin: 22px 0 8px;
+    }
+
+    p {
+        margin-bottom: 14px;
+    }
+
+    ul {
+        padding-left: 22px;
+        margin-bottom: 14px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .highlight {
+        border-left: 4px solid var(--primary);
+        background: #eff6ff;
+        padding: 18px 20px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .privacy-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    .privacy-item {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+    }
+
+    .privacy-item strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .yes {
+        color: var(--success);
+    }
+
+    .no {
+        color: #dc2626;
+    }
+
+    footer {
+        text-align: center;
+        padding: 35px 20px;
+        color: var(--muted);
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
         .hero {
-            background: linear-gradient(
-                135deg,
-                #2563eb,
-                #4f46e5
-            );
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 82px;
-            height: 82px;
-            margin: 0 auto 20px;
-            border-radius: 22px;
-            background: rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            backdrop-filter: blur(10px);
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: 0 auto;
-            opacity: 0.9;
-            font-size: 1.05rem;
-        }
-
-        .container {
-            width: min(900px, calc(100% - 32px));
-            margin: 40px auto;
+            padding: 55px 18px;
         }
 
         .card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 32px;
-            margin-bottom: 22px;
-            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
-        }
-
-        .updated {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 7px 13px;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.15);
-            font-size: 0.9rem;
-        }
-
-        h2 {
-            font-size: 1.45rem;
-            margin-bottom: 14px;
-        }
-
-        h3 {
-            font-size: 1.1rem;
-            margin: 22px 0 8px;
-        }
-
-        p {
-            margin-bottom: 14px;
-        }
-
-        ul {
-            padding-left: 22px;
-            margin-bottom: 14px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight {
-            border-left: 4px solid var(--primary);
-            background: #eff6ff;
-            padding: 18px 20px;
-            border-radius: 10px;
-            margin: 18px 0;
+            padding: 23px;
         }
 
         .privacy-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-            margin-top: 20px;
+            grid-template-columns: 1fr;
         }
+    }
+</style>
+```
 
-        .privacy-item {
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 18px;
-        }
-
-        .privacy-item strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .yes {
-            color: var(--success);
-        }
-
-        .no {
-            color: #dc2626;
-        }
-
-        footer {
-            text-align: center;
-            padding: 35px 20px;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 650px) {
-            .hero {
-                padding: 55px 18px;
-            }
-
-            .card {
-                padding: 23px;
-            }
-
-            .privacy-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -196,319 +200,633 @@
 <header class="hero">
     <div class="logo">📁</div>
 
-    <h1>MediaRescue Privacy Policy</h1>
+```
+<h1>MediaRescue Privacy Policy</h1>
 
-    <p>
-        Your files stay on your device. MediaRescue is designed
-        as an offline-first Android application for finding,
-        browsing, previewing, and managing media and files.
-    </p>
+<p>
+    Your media and files stay on your device. MediaRescue is
+    designed as an offline-first Android application for finding,
+    browsing, previewing, and managing media and files.
+</p>
 
-    <span class="updated">
-        Effective date: August 22, 2026
-    </span>
+<span class="updated">
+    Effective date: September 29, 2026
+</span>
+```
+
 </header>
 
 <main class="container">
 
-    <section class="card">
-        <h2>1. Introduction</h2>
+```
+<section class="card">
+    <h2>1. Introduction</h2>
 
-        <p>
-            This Privacy Policy explains how MediaRescue handles
-            information when you use the application.
-        </p>
+    <p>
+        This Privacy Policy explains how MediaRescue handles
+        information when you use the application.
+    </p>
 
-        <p>
-            MediaRescue is developed as an offline-first application.
-            The application is designed to process files locally
-            on your Android device.
-        </p>
+    <p>
+        MediaRescue is an offline-first application designed to
+        process your files locally on your Android device.
+        The application does not require an account for its
+        core functionality.
+    </p>
 
-        <div class="highlight">
-            <strong>Privacy at a glance</strong>
-            <br>
-            MediaRescue does not require an account and does not
-            upload your personal files to a remote server.
+    <div class="highlight">
+        <strong>Privacy at a glance</strong>
+        <br>
+        Your personal files and media are processed locally.
+        MediaRescue does not upload your personal files, media,
+        thumbnails, or file paths to MediaRescue's cloud services.
+        A small amount of anonymous installation and diagnostic
+        information is optionally synchronized to Firebase
+        Cloud Firestore to help us understand app usage,
+        compatibility, and activity.
+    </div>
+</section>
+
+
+<section class="card">
+    <h2>2. Information MediaRescue Accesses</h2>
+
+    <p>
+        MediaRescue requires access to storage so it can find,
+        display, preview, search, and manage files stored on
+        your device.
+    </p>
+
+    <h3>Files and Media</h3>
+
+    <p>
+        Depending on your Android version and the permissions
+        you grant, MediaRescue can access files and media stored
+        on accessible device storage.
+    </p>
+
+    <p>
+        This can include:
+    </p>
+
+    <ul>
+        <li>Images</li>
+        <li>Videos</li>
+        <li>Audio files</li>
+        <li>PDF documents</li>
+        <li>Other accessible files</li>
+    </ul>
+
+    <p>
+        MediaRescue uses this access for features such as storage
+        scanning, file searching, gallery views, previews,
+        browsing, large-file identification, hidden-media
+        discovery, and advanced scanning.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>3. How Your Files Are Processed</h2>
+
+    <p>
+        MediaRescue processes accessible files locally on your
+        Android device.
+    </p>
+
+    <p>
+        Your files are not uploaded to MediaRescue cloud services
+        for scanning, searching, previewing, playback, or file
+        management.
+    </p>
+
+    <div class="privacy-grid">
+
+        <div class="privacy-item">
+            <strong class="yes">✓ Local processing</strong>
+            File scanning, media discovery, previews, and file
+            management are performed on your device.
         </div>
-    </section>
 
-
-    <section class="card">
-        <h2>2. Information MediaRescue Accesses</h2>
-
-        <p>
-            MediaRescue requires access to storage so it can find,
-            display, preview, search, and manage files stored on
-            your device.
-        </p>
-
-        <h3>Files and Media</h3>
-
-        <p>
-            Depending on your Android version and the permissions
-            you grant, MediaRescue can access files and media stored
-            on accessible device storage.
-        </p>
-
-        <p>
-            This includes files such as:
-        </p>
-
-        <ul>
-            <li>Images</li>
-            <li>Videos</li>
-            <li>Audio files</li>
-            <li>PDF documents</li>
-            <li>Other accessible files</li>
-        </ul>
-
-        <p>
-            MediaRescue uses this access to provide features such as
-            storage scanning, file searching, gallery views,
-            previews, browsing, and large-file identification.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>3. How Your Files Are Processed</h2>
-
-        <p>
-            MediaRescue processes accessible files locally on your
-            Android device.
-        </p>
-
-        <p>
-            The application does not need to upload your files to
-            a cloud service to perform its core functions.
-        </p>
-
-        <div class="privacy-grid">
-
-            <div class="privacy-item">
-                <strong class="yes">✓ Local processing</strong>
-                File scanning and media discovery happen on your device.
-            </div>
-
-            <div class="privacy-item">
-                <strong class="yes">✓ Offline-first</strong>
-                Core functionality does not require an internet connection.
-            </div>
-
-            <div class="privacy-item">
-                <strong class="no">✕ No account required</strong>
-                MediaRescue does not require you to create an account.
-            </div>
-
-            <div class="privacy-item">
-                <strong class="no">✕ No cloud upload</strong>
-                Your personal files are not uploaded to MediaRescue servers.
-            </div>
-
+        <div class="privacy-item">
+            <strong class="yes">✓ Offline-first</strong>
+            Core MediaRescue functionality does not require
+            an internet connection.
         </div>
-    </section>
 
-
-    <section class="card">
-        <h2>4. Information We Collect</h2>
-
-        <p>
-            MediaRescue does not intentionally collect personal
-            information such as:
-        </p>
-
-        <ul>
-            <li>Your name</li>
-            <li>Your email address</li>
-            <li>Your phone number</li>
-            <li>Your contacts</li>
-            <li>Your location</li>
-            <li>Your photos or videos on a remote server</li>
-            <li>Your personal documents</li>
-        </ul>
-
-        <p>
-            MediaRescue also does not require user registration
-            or an account for its core functionality.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>5. Internet Access</h2>
-
-        <p>
-            MediaRescue is designed to provide its core functionality
-            without requiring an internet connection.
-        </p>
-
-        <p>
-            MediaRescue does not use your internet connection to
-            upload your personal files to a MediaRescue server.
-        </p>
-
-        <p>
-            If future versions introduce online functionality,
-            this Privacy Policy will be updated before or alongside
-            those changes where appropriate.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>6. Third-Party Services</h2>
-
-        <p>
-            The core MediaRescue application does not require
-            third-party analytics, advertising, or user-tracking
-            services to provide its primary functionality.
-        </p>
-
-        <p>
-            MediaRescue is distributed through third-party platforms
-            such as Google Play and F-Droid. Those platforms have
-            their own privacy policies and data practices.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>7. Storage Permissions</h2>
-
-        <p>
-            Storage access is required because MediaRescue's primary
-            purpose involves finding and managing files on your device.
-        </p>
-
-        <p>
-            You remain in control of granting or denying storage
-            access through Android's permission system.
-        </p>
-
-        <p>
-            If you deny the required access, some MediaRescue
-            features, such as scanning and browsing device storage,
-            will not function.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>8. Data Security</h2>
-
-        <p>
-            MediaRescue is designed to reduce privacy risks by
-            processing files locally instead of sending personal
-            files to remote servers.
-        </p>
-
-        <p>
-            You should still protect your Android device using
-            appropriate device security measures such as a screen
-            lock and system security updates.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>9. Children's Privacy</h2>
-
-        <p>
-            MediaRescue does not intentionally collect personal
-            information from children or other users.
-        </p>
-
-        <p>
-            Since MediaRescue does not require an account for its
-            core functionality, the application does not ask users
-            to submit personal profile information.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>10. Changes to This Privacy Policy</h2>
-
-        <p>
-            This Privacy Policy may be updated when MediaRescue
-            introduces new functionality, changes how information
-            is handled, or when legal or platform requirements change.
-        </p>
-
-        <p>
-            The latest version will always be published on this page.
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>11. Open Source</h2>
-
-        <p>
-            MediaRescue is an open-source project. You can inspect
-            the application's source code through the project's
-            GitHub repository.
-        </p>
-
-        <p>
-            <a
-                href="https://github.com/everythingfreee/MediaRescue"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View MediaRescue on GitHub →
-            </a>
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>12. Contact</h2>
-
-        <p>
-            If you have questions, concerns, or suggestions regarding
-            this Privacy Policy or MediaRescue's privacy practices,
-            please contact the developer through the project's
-            GitHub repository.
-        </p>
-
-        <p>
-            <a
-                href="https://github.com/everythingfreee/MediaRescue/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Contact / Report an Issue →
-            </a>
-        </p>
-    </section>
-
-
-    <section class="card">
-        <h2>13. Summary</h2>
-
-        <div class="highlight">
-            <strong>MediaRescue is built with a privacy-first approach.</strong>
-            <br><br>
-            Your files are processed locally on your device.
-            MediaRescue does not require an account, does not
-            intentionally collect personal information, and does
-            not upload your personal files to MediaRescue servers.
+        <div class="privacy-item">
+            <strong class="yes">✓ No account required</strong>
+            You do not need to create an account to use the
+            core features of MediaRescue.
         </div>
-    </section>
+
+        <div class="privacy-item">
+            <strong class="yes">✓ No personal file uploads</strong>
+            MediaRescue does not upload your personal files,
+            media, thumbnails, or file paths to its cloud services.
+        </div>
+
+    </div>
+</section>
+
+
+<section class="card">
+    <h2>4. Anonymous Installation & Activity Diagnostics</h2>
+
+    <p>
+        Starting with MediaRescue v1.0.9, the application uses
+        Firebase Cloud Firestore for limited, anonymous
+        installation and activity diagnostics.
+    </p>
+
+    <p>
+        This information helps us understand how many installations
+        are using MediaRescue, which app versions and Android
+        versions are in use, and whether compatibility issues
+        may affect particular device models or software versions.
+    </p>
+
+    <h3>Information Used for Diagnostics</h3>
+
+    <p>
+        Depending on the available information on your device,
+        MediaRescue may synchronize the following diagnostic data:
+    </p>
+
+    <ul>
+        <li>A randomly generated installation ID</li>
+        <li>Firebase Cloud Messaging (FCM) token</li>
+        <li>Last recorded app activity</li>
+        <li>MediaRescue app version</li>
+        <li>Android version</li>
+        <li>Device model</li>
+    </ul>
+
+    <p>
+        The installation ID is randomly generated for the
+        installation and is not your name, email address,
+        phone number, or other directly identifying information.
+    </p>
+
+    <h3>What We Do Not Send</h3>
+
+    <p>
+        Diagnostic synchronization does not include:
+    </p>
+
+    <ul>
+        <li>Your name or email address</li>
+        <li>Your contacts</li>
+        <li>Your location</li>
+        <li>Your photos, videos, or audio files</li>
+        <li>Your personal documents</li>
+        <li>Your media thumbnails</li>
+        <li>Your file paths</li>
+        <li>The contents of your files</li>
+    </ul>
+
+    <h3>Offline-First Synchronization</h3>
+
+    <p>
+        Diagnostic information is cached locally and is not
+        required to be transmitted immediately. When network
+        connectivity is available, the application can synchronize
+        diagnostic information approximately once every 24 hours.
+    </p>
+
+    <p>
+        If you use MediaRescue while offline, diagnostic information
+        can remain locally cached and may be synchronized later
+        when connectivity becomes available.
+    </p>
+
+    <div class="highlight">
+        <strong>Why is this collected?</strong>
+        <br>
+        The purpose is limited to understanding installation
+        counts, app activity, software-version compatibility,
+        device-specific issues, and release adoption. It is not
+        used to upload or analyze the contents of your files.
+    </div>
+</section>
+
+
+<section class="card">
+    <h2>5. Firebase Cloud Firestore</h2>
+
+    <p>
+        MediaRescue uses Firebase Cloud Firestore as the backend
+        service for anonymous installation and diagnostic data
+        described in Section 4.
+    </p>
+
+    <p>
+        Firestore is operated by Google and is a third-party
+        infrastructure service used to store the limited
+        diagnostic information described in this policy.
+    </p>
+
+    <p>
+        MediaRescue does not use Firestore to store your personal
+        media, documents, file contents, media thumbnails, or
+        file paths.
+    </p>
+
+    <p>
+        The use of Firebase is limited to the diagnostic and
+        notification-related functionality described in this
+        Privacy Policy.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>6. Local Memories & Anniversary Notifications</h2>
+
+    <p>
+        MediaRescue v1.0.9 includes a local Memories feature that
+        can remind you about images, videos, and audio files
+        associated with dates from previous years.
+    </p>
+
+    <p>
+        Memory information is stored locally on your device.
+        This can include information such as:
+    </p>
+
+    <ul>
+        <li>Local file path</li>
+        <li>Media type</li>
+        <li>Creation or relevant media date</li>
+        <li>Locally cached artwork or thumbnail data</li>
+        <li>Notification bookkeeping information</li>
+    </ul>
+
+    <p>
+        This Memory metadata is used to create local anniversary
+        notifications and reopen the corresponding media when
+        you interact with a notification.
+    </p>
+
+    <div class="highlight">
+        <strong>Memory data stays local.</strong>
+        <br>
+        MediaRescue does not upload Memory metadata, file paths,
+        thumbnails, or the associated media to Firebase or a
+        MediaRescue cloud server.
+    </div>
+
+    <p>
+        Memory notifications use Android's local notification
+        system and can operate without an internet connection.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>7. Notification Permissions and FCM</h2>
+
+    <p>
+        MediaRescue may use Android notifications for features
+        such as Memory reminders, playback controls, and other
+        application functionality.
+    </p>
+
+    <p>
+        Depending on your Android version and notification
+        settings, you can control whether MediaRescue is
+        allowed to display notifications.
+    </p>
+
+    <p>
+        MediaRescue may store an FCM token as part of its
+        anonymous diagnostic information. This token can allow
+        the application infrastructure to identify an installation
+        for future notification-related functionality.
+    </p>
+
+    <p>
+        The FCM token does not contain your personal files or
+        the contents of your media.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>8. Advanced Scan Preview Cache</h2>
+
+    <p>
+        MediaRescue may create a local preview cache for
+        thumbnails and previews generated during Advanced Scan.
+    </p>
+
+    <p>
+        The cache is stored on your device and is protected from
+        normal Android media indexing using a <code>.nomedia</code>
+        marker.
+    </p>
+
+    <p>
+        This prevents cached preview files from unnecessarily
+        appearing as normal media in other gallery or media
+        applications.
+    </p>
+
+    <p>
+        The preview cache is local to your device and is not
+        uploaded to MediaRescue cloud services.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>9. Information We Do Not Intentionally Collect</h2>
+
+    <p>
+        MediaRescue does not intentionally collect personal
+        information such as:
+    </p>
+
+    <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Your phone number</li>
+        <li>Your contacts</li>
+        <li>Your precise location</li>
+        <li>Your photos, videos, or audio on a remote server</li>
+        <li>Your personal documents</li>
+        <li>The contents of your files</li>
+    </ul>
+
+    <p>
+        MediaRescue also does not require user registration
+        or a personal account for its core functionality.
+    </p>
+
+    <p>
+        Please note that anonymous diagnostic identifiers,
+        such as a randomly generated installation ID or an FCM
+        token, may still be used as described in this policy.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>10. Internet Access</h2>
+
+    <p>
+        MediaRescue is designed to provide its core functionality
+        without requiring an internet connection.
+    </p>
+
+    <p>
+        Internet connectivity may be used for limited functionality
+        such as synchronizing anonymous diagnostics with Firebase
+        Cloud Firestore.
+    </p>
+
+    <p>
+        MediaRescue does not use your internet connection to
+        upload your personal files, media, thumbnails, or file
+        contents to MediaRescue cloud services.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>11. Third-Party Services</h2>
+
+    <p>
+        MediaRescue uses limited third-party infrastructure for
+        specific functionality.
+    </p>
+
+    <h3>Firebase Cloud Firestore</h3>
+
+    <p>
+        Firebase Cloud Firestore is used to store the anonymous
+        installation and diagnostic information described in
+        this Privacy Policy.
+    </p>
+
+    <p>
+        Firebase services are provided by Google. Google's
+        handling of information is governed by Google's applicable
+        privacy policies and service terms.
+    </p>
+
+    <p>
+        MediaRescue does not use third-party advertising networks
+        to display advertisements inside the application.
+    </p>
+
+    <p>
+        MediaRescue is also distributed through third-party
+        platforms such as Google Play, F-Droid, APKPure, Softonic,
+        Uptodown, GitHub, and other distribution services.
+        These platforms may have their own privacy policies and
+        data practices that apply when you use their services.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>12. Storage Permissions</h2>
+
+    <p>
+        Storage access is required because MediaRescue's primary
+        purpose involves finding and managing files on your device.
+    </p>
+
+    <p>
+        You remain in control of granting or denying storage access
+        through Android's permission and access systems.
+    </p>
+
+    <p>
+        If you deny required access, some MediaRescue features,
+        such as scanning and browsing device storage, may not
+        function.
+    </p>
+
+    <p>
+        MediaRescue may also use Android's supported access
+        mechanisms for advanced storage locations when you
+        explicitly enable and authorize those features.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>13. Data Security</h2>
+
+    <p>
+        MediaRescue is designed to reduce privacy risks by
+        processing personal files locally instead of sending
+        them to remote servers.
+    </p>
+
+    <p>
+        Anonymous diagnostic information synchronized with
+        Firebase is limited to the information described in this
+        Privacy Policy.
+    </p>
+
+    <p>
+        You should still protect your Android device using
+        appropriate device security measures such as a screen
+        lock and current system security updates.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>14. Data Retention</h2>
+
+    <p>
+        Local file information, Memory metadata, previews,
+        thumbnails, and other application data may remain on
+        your device until they are removed by MediaRescue,
+        Android, or you.
+    </p>
+
+    <p>
+        Anonymous diagnostic information synchronized with
+        Firebase may remain available for operational and
+        compatibility analysis for as long as reasonably
+        necessary for those purposes.
+    </p>
+
+    <p>
+        Uninstalling MediaRescue removes the application's local
+        data according to Android's normal application data
+        handling. This does not necessarily remove previously
+        synchronized anonymous diagnostic records from Firebase.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>15. Children's Privacy</h2>
+
+    <p>
+        MediaRescue does not intentionally collect names, contact
+        information, or other directly identifying personal
+        information from children.
+    </p>
+
+    <p>
+        The application does not require an account for its core
+        functionality. The limited anonymous diagnostic information
+        described in this policy may still be processed when the
+        application is used.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>16. Open Source</h2>
+
+    <p>
+        MediaRescue is an open-source project. You can inspect
+        the application's source code through the project's
+        GitHub repository.
+    </p>
+
+    <p>
+        <a
+            href="https://github.com/everythingfreee/MediaRescue"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View MediaRescue on GitHub →
+        </a>
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>17. Changes to This Privacy Policy</h2>
+
+    <p>
+        This Privacy Policy may be updated when MediaRescue
+        introduces new functionality, changes how information
+        is handled, or when legal or platform requirements change.
+    </p>
+
+    <p>
+        Material changes will be reflected in the updated version
+        published on this page.
+    </p>
+
+    <p>
+        The effective date at the top of this page indicates
+        when the current version of this Privacy Policy became
+        effective.
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>18. Contact</h2>
+
+    <p>
+        If you have questions, concerns, or suggestions regarding
+        this Privacy Policy or MediaRescue's privacy practices,
+        please contact the developer through the project's
+        GitHub repository.
+    </p>
+
+    <p>
+        <a
+            href="https://github.com/everythingfreee/MediaRescue/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Contact / Report an Issue →
+        </a>
+    </p>
+</section>
+
+
+<section class="card">
+    <h2>19. Summary</h2>
+
+    <div class="highlight">
+        <strong>MediaRescue is built with a privacy-first approach.</strong>
+        <br><br>
+        Your personal files and media are processed locally on
+        your device. MediaRescue does not require an account and
+        does not upload your files, media, thumbnails, file paths,
+        or file contents to its cloud services.
+        <br><br>
+        MediaRescue v1.0.9 does use Firebase Cloud Firestore for
+        limited anonymous installation and activity diagnostics,
+        such as a randomly generated installation ID, app version,
+        Android version, device model, last activity, and an FCM
+        token. This information is synchronized approximately
+        once every 24 hours when connectivity is available.
+        <br><br>
+        Memory metadata and preview-cache information remain
+        stored locally on your device and are not uploaded as
+        part of this diagnostic system.
+    </div>
+</section>
+```
 
 </main>
-
 
 <footer>
     <p>
         © 2026 MediaRescue. All rights reserved.
     </p>
 
-    <p>
-        Privacy Policy for MediaRescue v1.0.0
-    </p>
+```
+<p>
+    Privacy Policy for MediaRescue v1.0.9
+</p>
+```
+
 </footer>
 
 </body>
